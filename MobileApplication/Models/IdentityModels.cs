@@ -20,6 +20,9 @@ namespace MobileApplication.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Mobile> Mobiles { get; set; }
+        public DbSet<Manufacturer> Manufacturers { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

@@ -1,0 +1,25 @@
+﻿@model MobileApplication.Models.Mobile
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <img src="@Url.Content(Model.Link)" />
+</div>
+<h3>@Model.Name</h3>
+<ul>
+    <li>მწარმოებელი : <b> @Model.Manufacturer.Name </b></li>
+    <li>ზომა: <b> @Model.Dimensions </b></li>
+    <li>წონა: <b> @Model.Weight </b></li>
+    <li>ეკრანის ზომა: <b> @Model.ScreenSize </b></li>
+    <li>ეკრანის გარჩევადობა: <b> @Model.Resolution </b></li>
+    <li>პროცესორი: <b> @Model.CPU </b></li>
+    <li>მეხსიერება: <b> @Model.Memory </b></li>
+    <li>ოპერაციული სისტემა: <b> @Model.OS </b></li>
+    <li>ფასი: <b> @Model.Price ლარი</b></li>
+    <li>ფოტო: <b> @Model.Features </b></li>
+    <li>ვიდეო: <b> @Model.Video </b></li>
+</ul>
+
+
